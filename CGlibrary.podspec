@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
           #8.
           s.source              = { :git => "https://github.com/Dinesh2871995/CGlibrary.git", :tag => "1.0.0" }
           #9.
-          s.source_files     = “CGlibrary”, “CGlibrary/**/*.{h,m,swift}"
+          s.source_files     = “CGlibrary”, “CGlibrary/*.{h,m,swift}"
     end
