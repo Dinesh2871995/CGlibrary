@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="FAY-Wf-6XB">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zeZ-D3-WAt" customClass="CGlibraryView" customModule="CGlibrary" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7G-hP-5hh">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-eF-7AI">
+                                <rect key="frame" x="39" y="62" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RU6-T2-ZyI">
+                                <rect key="frame" x="39" y="110" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w7G-hP-5hh" firstAttribute="leading" secondItem="zeZ-D3-WAt" secondAttribute="leading" id="Kqd-HF-90C"/>
+                    <constraint firstItem="w7G-hP-5hh" firstAttribute="top" secondItem="zeZ-D3-WAt" secondAttribute="top" id="bOS-J6-36Q"/>
+                    <constraint firstAttribute="bottom" secondItem="w7G-hP-5hh" secondAttribute="bottom" id="tPP-ag-pAD"/>
+                    <constraint firstAttribute="trailing" secondItem="w7G-hP-5hh" secondAttribute="trailing" id="wnv-7N-aPd"/>
+                </constraints>
+                <connections>
+                    <outlet property="xPosi" destination="qiK-eF-7AI" id="ndu-pe-5gJ"/>
+                    <outlet property="yPosi" destination="RU6-T2-ZyI" id="Qm1-sT-esJ"/>
+                </connections>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="-16" y="274"/>
+        </visualEffectView>
+    </objects>
+</document>

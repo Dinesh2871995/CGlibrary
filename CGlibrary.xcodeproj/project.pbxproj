@@ -10,6 +10,8 @@
 		187139E820D8F75000CA7188 /* CGlibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187139DE20D8F74F00CA7188 /* CGlibrary.framework */; };
 		187139ED20D8F75000CA7188 /* CGlibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187139EC20D8F75000CA7188 /* CGlibraryTests.swift */; };
 		187139EF20D8F75000CA7188 /* CGlibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 187139E120D8F74F00CA7188 /* CGlibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187139F920D8F77D00CA7188 /* CGlibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187139F820D8F77D00CA7188 /* CGlibraryView.xib */; };
+		187139FB20D8F81D00CA7188 /* CGlibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187139FA20D8F81D00CA7188 /* CGlibraryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		187139E720D8F75000CA7188 /* CGlibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGlibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187139EC20D8F75000CA7188 /* CGlibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGlibraryTests.swift; sourceTree = "<group>"; };
 		187139EE20D8F75000CA7188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187139F820D8F77D00CA7188 /* CGlibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGlibraryView.xib; sourceTree = "<group>"; };
+		187139FA20D8F81D00CA7188 /* CGlibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGlibraryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				187139E120D8F74F00CA7188 /* CGlibrary.h */,
 				187139E220D8F74F00CA7188 /* Info.plist */,
+				187139F820D8F77D00CA7188 /* CGlibraryView.xib */,
+				187139FA20D8F81D00CA7188 /* CGlibraryView.swift */,
 			);
 			path = CGlibrary;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					187139DD20D8F74F00CA7188 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					187139E620D8F75000CA7188 = {
@@ -179,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187139F920D8F77D00CA7188 /* CGlibraryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187139FB20D8F81D00CA7188 /* CGlibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 		187139F320D8F75000CA7188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vivekApp.CGlibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +366,7 @@
 		187139F420D8F75000CA7188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,12 +374,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = CGlibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vivekApp.CGlibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,6 +390,7 @@
 		187139F620D8F75000CA7188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMJFE5DQ8M;
 				INFOPLIST_FILE = CGlibraryTests/Info.plist;
@@ -390,6 +405,7 @@
 		187139F720D8F75000CA7188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMJFE5DQ8M;
 				INFOPLIST_FILE = CGlibraryTests/Info.plist;
